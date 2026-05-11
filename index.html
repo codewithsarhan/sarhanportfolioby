@@ -403,6 +403,53 @@
             align-items: center;
         }
 
+        .certificate-card {
+            display: flex;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+            background: var(--bg-card);
+            backdrop-filter: blur(12px);
+            border-radius: 28px;
+            border: 1px solid rgba(59, 130, 246, 0.18);
+            box-shadow: var(--shadow-lg);
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .certificate-preview {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .certificate-img {
+            width: 100%;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            display: block;
+        }
+
+        .certificate-img:hover {
+            transform: translateY(-6px);
+        }
+
+        .certificate-copy {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .certificate-copy p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .certificate-copy .btn-outline {
+            max-width: 220px;
+        }
+
         .about-bio {
             flex: 1.5;
             background: var(--bg-card);
@@ -1098,6 +1145,27 @@
             </div>
         </section>
 
+        <!-- Certificate Section -->
+        <section id="certificate">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">my website desginig course certificate</h2>
+                <div class="certificate-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="certificate-preview">
+                        <img class="certificate-img" src="websiteDesginCertificate.png"
+                            alt="Website Designing Course Certificate">
+                    </div>
+                    <div class="certificate-copy">
+                        <p>This certificate highlights my completion of the Website Designing course at ELI European
+                            Institute, Landhi No. 4.</p>
+                        <p>It shows the skills and dedication I bring to every project, from layout design to responsive
+                            UI development.</p>
+                        <a href="websiteDesginCertificate.png" target="_blank" class="btn btn-outline"><i
+                                class="fas fa-eye"></i> View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Skills Section (cards with icons) -->
         <section id="skills">
             <div class="container">
@@ -1129,9 +1197,7 @@
                     <!-- Project 0 - Finance Tracker (TOP PROJECT) -->
                     <div class="project-card featured-project" data-aos="fade-up" data-aos-delay="100">
                         <div class="featured-badge">⭐ TOP PROJECT</div>
-                        <img class="project-img"
-                            src="https://rising-magenta-8j5sd14nd4.edgeone.app/financeTrackerWeb.png"
-                            alt="Personal Finance Tracker">
+                        <img class="project-img" src="websiteimage.png" alt="Personal Finance Tracker">
                         <div class="project-info">
                             <h3>Personal Finance Tracker</h3>
                             <p>Complete financial dashboard with income/expense tracking, category-wise spending
