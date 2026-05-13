@@ -525,7 +525,10 @@
         /* Skills Grid */
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            justify-items: center;
+            align-items: center;
+            grid-auto-rows: 1fr;
             gap: 2rem;
             margin-top: 1.5rem;
         }
@@ -533,13 +536,20 @@
         .skill-card {
             background: var(--bg-card);
             backdrop-filter: blur(10px);
-            padding: 2rem 1rem;
+            width: 100%;
+            max-width: 220px;
+            aspect-ratio: 1 / 1;
+            padding: 1.5rem 1rem;
             text-align: center;
             border-radius: 20px;
             transition: all 0.4s ease;
             border: 1px solid var(--border-color);
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         .skill-card::before {
@@ -560,7 +570,8 @@
         }
 
         .skill-card i,
-        .skill-card svg {
+        .skill-card svg,
+        .skill-card img {
             font-size: 3.5rem;
             margin-bottom: 1rem;
             display: inline-block;
@@ -570,7 +581,8 @@
         }
 
         .skill-card:hover i,
-        .skill-card:hover svg {
+        .skill-card:hover svg,
+        .skill-card:hover img {
             transform: scale(1.2) rotate(5deg);
         }
 
@@ -1183,8 +1195,14 @@
                             style="color:#ffffff;"></i><span>GitHub</span></div>
                     <div class="skill-card" data-aos="zoom-in"><i class="fas fa-cloud-upload-alt"
                             style="color:#00C7B7;"></i><span>Netlify</span></div>
-                    <div class="skill-card" data-aos="zoom-in"><i class="fas fa-brain"
-                            style="color:#007bff;"></i><span>AI Tools</span></div>
+                    <div class="skill-card" data-aos="zoom-in"><img src="images-removebg-preview.png" alt="Cursor AI"
+                            style="width:40px; height:40px;"><span>Cursor AI</span></div>
+                    <div class="skill-card" data-aos="zoom-in"><img src="logo2-removebg-preview.png" alt="Bolt.new.io"
+                            style="width:40px; height:40px;"><span>Bolt.new.io</span></div>
+                    <div class="skill-card" data-aos="zoom-in"><img src="logo3.png" alt="Deep Seek AI"
+                            style="width:40px; height:40px;"><span>Deep Seek AI</span></div>
+                    <div class="skill-card" data-aos="zoom-in"><img src="default-removebg-preview.png" alt="Qoder AI"
+                            style="width:40px; height:40px;"><span>Qoder AI</span></div>
                 </div>
             </div>
         </section>
